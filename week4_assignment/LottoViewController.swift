@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LottoViewController.swift
 //  week4_assignment
 //
 //  Created by 장혜성 on 2023/08/08.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LottoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
 }
-

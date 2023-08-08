@@ -9,24 +9,24 @@
 /* Begin PBXBuildFile section */
 		C0A405602A8226DF00C7C1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4055F2A8226DF00C7C1CE /* AppDelegate.swift */; };
 		C0A405622A8226DF00C7C1CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A405612A8226DF00C7C1CE /* SceneDelegate.swift */; };
-		C0A405642A8226DF00C7C1CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A405632A8226DF00C7C1CE /* ViewController.swift */; };
 		C0A405672A8226DF00C7C1CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A405652A8226DF00C7C1CE /* Main.storyboard */; };
 		C0A405692A8226E000C7C1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A405682A8226E000C7C1CE /* Assets.xcassets */; };
 		C0A4056C2A8226E000C7C1CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A4056A2A8226E000C7C1CE /* LaunchScreen.storyboard */; };
 		C0A405752A82282C00C7C1CE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C0A405742A82282C00C7C1CE /* Alamofire */; };
 		C0A405782A82283A00C7C1CE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C0A405772A82283A00C7C1CE /* SwiftyJSON */; };
 		C0A4057B2A82284B00C7C1CE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C0A4057A2A82284B00C7C1CE /* Kingfisher */; };
+		C0A4057D2A82288A00C7C1CE /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4057C2A82288A00C7C1CE /* LottoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C0A4055C2A8226DF00C7C1CE /* week4_assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week4_assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A4055F2A8226DF00C7C1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A405612A8226DF00C7C1CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C0A405632A8226DF00C7C1CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0A405662A8226DF00C7C1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0A405682A8226E000C7C1CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0A4056B2A8226E000C7C1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0A4056D2A8226E000C7C1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A4057C2A82288A00C7C1CE /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 			children = (
 				C0A4055F2A8226DF00C7C1CE /* AppDelegate.swift */,
 				C0A405612A8226DF00C7C1CE /* SceneDelegate.swift */,
-				C0A405632A8226DF00C7C1CE /* ViewController.swift */,
 				C0A405652A8226DF00C7C1CE /* Main.storyboard */,
+				C0A4057C2A82288A00C7C1CE /* LottoViewController.swift */,
 				C0A405682A8226E000C7C1CE /* Assets.xcassets */,
 				C0A4056A2A8226E000C7C1CE /* LaunchScreen.storyboard */,
 				C0A4056D2A8226E000C7C1CE /* Info.plist */,
@@ -154,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0A405642A8226DF00C7C1CE /* ViewController.swift in Sources */,
+				C0A4057D2A82288A00C7C1CE /* LottoViewController.swift in Sources */,
 				C0A405602A8226DF00C7C1CE /* AppDelegate.swift in Sources */,
 				C0A405622A8226DF00C7C1CE /* SceneDelegate.swift in Sources */,
 			);
