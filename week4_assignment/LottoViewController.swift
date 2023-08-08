@@ -36,6 +36,8 @@ class LottoViewController: UIViewController {
         callLottoInfo(selectNum: "1079")
         
         indicatorView.hidesWhenStopped = true
+        
+        //test
     }
 
     func callLottoInfo(selectNum: String) {
