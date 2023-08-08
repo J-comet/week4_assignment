@@ -20,6 +20,11 @@ class BearCollectionViewCell: UICollectionViewCell {
         designCell()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        thumbImageView.image = nil
+    }
+    
     func designCell() {
         thumbImageView.contentMode = .scaleAspectFit
         nameLabel.textAlignment = .center

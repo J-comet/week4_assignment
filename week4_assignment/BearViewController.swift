@@ -15,8 +15,6 @@ class BearViewController: UIViewController {
     
     var bearList: [Bear] = []
     
-//    let url = "https://api.punkapi.com/v2/beers?page=2&per_page=80"
-    let url = "https://api.punkapi.com/v2/beers"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +24,20 @@ class BearViewController: UIViewController {
         setCollectionViewLayout()
         configVC()
         callBearList(page: 1)
+        
+        // 네비게이션바 아래 라인 생기도록하기
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.configureWithOpaqueBackground()
+        self.navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
+        
+//        navigationController?.navigationBar.tintColor = .blue
+//        navigationController?.navigationBar.backgroundColor = .yellow
+//        view.backgroundColor = .yellow
+    }
+    
+    override func awakeAfter(using coder: NSCoder) -> Any? {
+        navigationItem.backButtonDisplayMode = .minimal
+        return super.awakeAfter(using: coder)
     }
 
     func configVC() {
@@ -40,7 +52,7 @@ class BearViewController: UIViewController {
         
         let parameters: [String: String] = ["page": "\(page)"]
         
-        AF.request(url, method: .get, parameters: parameters)
+        AF.request(RootUrl.bear, method: .get, parameters: parameters)
             .validate()
             .responseJSON { response in
             switch response.result {
@@ -48,7 +60,11 @@ class BearViewController: UIViewController {
                 let json = JSON(value)
             
                 for item in json.arrayValue {
-                    self.bearList.append(Bear(name: item["name"].stringValue, imgUrl: item["image_url"].stringValue))
+                    self.bearList.append(
+                        Bear(
+                            id: item["id"].intValue,
+                            name: item["name"].stringValue,
+                            imgUrl: item["image_url"].stringValue))
                 }
                 
                 self.bearCollectionView.reloadData()
@@ -89,6 +105,10 @@ extension BearViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(#function)
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: DetailBearViewController.identifier) as! DetailBearViewController
+        let row = bearList[indexPath.row]
+        vc.bear = row
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

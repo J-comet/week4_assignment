@@ -20,6 +20,8 @@
 		C0A405822A82386600C7C1CE /* BearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A405802A82386600C7C1CE /* BearCollectionViewCell.swift */; };
 		C0A405832A82386600C7C1CE /* BearCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0A405812A82386600C7C1CE /* BearCollectionViewCell.xib */; };
 		C0A405852A8238D800C7C1CE /* Bear.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A405842A8238D800C7C1CE /* Bear.swift */; };
+		C0A405872A8241BD00C7C1CE /* DetailBearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A405862A8241BD00C7C1CE /* DetailBearViewController.swift */; };
+		C0A405892A824CF400C7C1CE /* APIUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A405882A824CF400C7C1CE /* APIUrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		C0A405802A82386600C7C1CE /* BearCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearCollectionViewCell.swift; sourceTree = "<group>"; };
 		C0A405812A82386600C7C1CE /* BearCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BearCollectionViewCell.xib; sourceTree = "<group>"; };
 		C0A405842A8238D800C7C1CE /* Bear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bear.swift; sourceTree = "<group>"; };
+		C0A405862A8241BD00C7C1CE /* DetailBearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBearViewController.swift; sourceTree = "<group>"; };
+		C0A405882A824CF400C7C1CE /* APIUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 				C0A4055F2A8226DF00C7C1CE /* AppDelegate.swift */,
 				C0A405612A8226DF00C7C1CE /* SceneDelegate.swift */,
 				C0A405652A8226DF00C7C1CE /* Main.storyboard */,
+				C0A405862A8241BD00C7C1CE /* DetailBearViewController.swift */,
 				C0A405802A82386600C7C1CE /* BearCollectionViewCell.swift */,
 				C0A405812A82386600C7C1CE /* BearCollectionViewCell.xib */,
 				C0A4057E2A82305B00C7C1CE /* BearViewController.swift */,
@@ -81,6 +86,7 @@
 				C0A4056A2A8226E000C7C1CE /* LaunchScreen.storyboard */,
 				C0A4056D2A8226E000C7C1CE /* Info.plist */,
 				C0A405842A8238D800C7C1CE /* Bear.swift */,
+				C0A405882A824CF400C7C1CE /* APIUrl.swift */,
 			);
 			path = week4_assignment;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 			files = (
 				C0A4057F2A82305B00C7C1CE /* BearViewController.swift in Sources */,
 				C0A405822A82386600C7C1CE /* BearCollectionViewCell.swift in Sources */,
+				C0A405872A8241BD00C7C1CE /* DetailBearViewController.swift in Sources */,
 				C0A4057D2A82288A00C7C1CE /* LottoViewController.swift in Sources */,
+				C0A405892A824CF400C7C1CE /* APIUrl.swift in Sources */,
 				C0A405602A8226DF00C7C1CE /* AppDelegate.swift in Sources */,
 				C0A405622A8226DF00C7C1CE /* SceneDelegate.swift in Sources */,
 				C0A405852A8238D800C7C1CE /* Bear.swift in Sources */,
