@@ -149,24 +149,45 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiJ-QL-70d">
+                                <rect key="frame" x="136.66666666666666" y="521" width="119.99999999999997" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="tYC-zt-S93"/>
+                                    <constraint firstAttribute="height" constant="45" id="zL7-IK-RPB"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="randomButtonClicked:" destination="BeL-hG-82n" eventType="touchUpInside" id="god-6F-FpI"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="HiH-S1-DDJ">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YS3-Il-4dw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="HiH-S1-DDJ" firstAttribute="centerX" secondItem="RXL-87-dRC" secondAttribute="centerX" id="543-8a-OoU"/>
                             <constraint firstItem="R3F-1Q-x0H" firstAttribute="top" secondItem="5f9-bY-dbQ" secondAttribute="bottom" constant="16" id="C6x-3x-PrN"/>
                             <constraint firstItem="R3F-1Q-x0H" firstAttribute="trailing" secondItem="5f9-bY-dbQ" secondAttribute="trailing" id="Cey-SI-of1"/>
                             <constraint firstItem="5f9-bY-dbQ" firstAttribute="top" secondItem="YS3-Il-4dw" secondAttribute="top" constant="16" id="FQV-4w-ElF"/>
                             <constraint firstItem="1EA-EC-S1Y" firstAttribute="leading" secondItem="R3F-1Q-x0H" secondAttribute="leading" id="SKd-AY-vpT"/>
+                            <constraint firstItem="ZiJ-QL-70d" firstAttribute="top" secondItem="1EA-EC-S1Y" secondAttribute="bottom" constant="20" id="ZY2-Qz-r9k"/>
                             <constraint firstItem="1EA-EC-S1Y" firstAttribute="trailing" secondItem="R3F-1Q-x0H" secondAttribute="trailing" id="ddg-Fq-mZA"/>
                             <constraint firstItem="1EA-EC-S1Y" firstAttribute="top" secondItem="R3F-1Q-x0H" secondAttribute="bottom" constant="16" id="euR-rz-cVe"/>
                             <constraint firstItem="YS3-Il-4dw" firstAttribute="trailing" secondItem="5f9-bY-dbQ" secondAttribute="trailing" constant="70" id="jAX-4Y-JRU"/>
                             <constraint firstItem="5f9-bY-dbQ" firstAttribute="leading" secondItem="YS3-Il-4dw" secondAttribute="leading" constant="70" id="mif-Zr-Xch"/>
+                            <constraint firstItem="ZiJ-QL-70d" firstAttribute="centerX" secondItem="RXL-87-dRC" secondAttribute="centerX" id="nyJ-Nt-vme"/>
+                            <constraint firstItem="HiH-S1-DDJ" firstAttribute="centerY" secondItem="RXL-87-dRC" secondAttribute="centerY" id="qHP-i6-ixd"/>
                             <constraint firstItem="R3F-1Q-x0H" firstAttribute="leading" secondItem="5f9-bY-dbQ" secondAttribute="leading" id="tjh-X9-zgn"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="descriptionTextView" destination="1EA-EC-S1Y" id="25X-Sv-HEK"/>
+                        <outlet property="indicatorView" destination="HiH-S1-DDJ" id="wHj-zl-szg"/>
                         <outlet property="nameLabel" destination="R3F-1Q-x0H" id="Hw3-eo-B4Q"/>
+                        <outlet property="randomButton" destination="ZiJ-QL-70d" id="6hF-Ds-7Lc"/>
                         <outlet property="thumbImageView" destination="5f9-bY-dbQ" id="JNz-fL-a3I"/>
                     </connections>
                 </viewController>
