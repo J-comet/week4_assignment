@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="DhO-Nt-Y1u">
-                                <rect key="frame" x="20" y="386" width="353" height="80"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="DhO-Nt-Y1u">
+                                <rect key="frame" x="20" y="393" width="353" height="66.333333333333314"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bh7-ES-dqT">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
@@ -25,7 +25,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhA-s4-r2Y">
-                                        <rect key="frame" x="0.0" y="46" width="353" height="34"/>
+                                        <rect key="frame" x="0.0" y="46" width="353" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -44,6 +44,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="dlY-MC-g7m">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eQ2-Ot-eaL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -52,10 +55,17 @@
                             <constraint firstItem="eQ2-Ot-eaL" firstAttribute="trailing" secondItem="DhO-Nt-Y1u" secondAttribute="trailing" constant="20" id="7I3-TN-BUv"/>
                             <constraint firstItem="DhO-Nt-Y1u" firstAttribute="centerX" secondItem="wS6-Qq-CRT" secondAttribute="centerX" id="HK4-At-mWz"/>
                             <constraint firstItem="DhO-Nt-Y1u" firstAttribute="centerY" secondItem="wS6-Qq-CRT" secondAttribute="centerY" id="OzG-CY-PHy"/>
+                            <constraint firstItem="dlY-MC-g7m" firstAttribute="centerX" secondItem="wS6-Qq-CRT" secondAttribute="centerX" id="aXM-Yt-woQ"/>
+                            <constraint firstItem="dlY-MC-g7m" firstAttribute="centerY" secondItem="wS6-Qq-CRT" secondAttribute="centerY" id="mWz-Pv-O1K"/>
                             <constraint firstItem="s1J-V3-3ck" firstAttribute="centerX" secondItem="wS6-Qq-CRT" secondAttribute="centerX" id="ret-E1-TK9"/>
                             <constraint firstItem="DhO-Nt-Y1u" firstAttribute="leading" secondItem="eQ2-Ot-eaL" secondAttribute="leading" constant="20" id="wwz-TY-4ny"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="dlY-MC-g7m" id="UDB-aK-BYs"/>
+                        <outlet property="numLabel" destination="fhA-s4-r2Y" id="Pdv-tY-7kk"/>
+                        <outlet property="textField" destination="bh7-ES-dqT" id="xjA-TH-Wp4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLT-vH-Kan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
