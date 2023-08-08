@@ -16,6 +16,10 @@
 		C0A405782A82283A00C7C1CE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C0A405772A82283A00C7C1CE /* SwiftyJSON */; };
 		C0A4057B2A82284B00C7C1CE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C0A4057A2A82284B00C7C1CE /* Kingfisher */; };
 		C0A4057D2A82288A00C7C1CE /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4057C2A82288A00C7C1CE /* LottoViewController.swift */; };
+		C0A4057F2A82305B00C7C1CE /* BearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4057E2A82305B00C7C1CE /* BearViewController.swift */; };
+		C0A405822A82386600C7C1CE /* BearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A405802A82386600C7C1CE /* BearCollectionViewCell.swift */; };
+		C0A405832A82386600C7C1CE /* BearCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0A405812A82386600C7C1CE /* BearCollectionViewCell.xib */; };
+		C0A405852A8238D800C7C1CE /* Bear.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A405842A8238D800C7C1CE /* Bear.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		C0A4056B2A8226E000C7C1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0A4056D2A8226E000C7C1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A4057C2A82288A00C7C1CE /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		C0A4057E2A82305B00C7C1CE /* BearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearViewController.swift; sourceTree = "<group>"; };
+		C0A405802A82386600C7C1CE /* BearCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0A405812A82386600C7C1CE /* BearCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BearCollectionViewCell.xib; sourceTree = "<group>"; };
+		C0A405842A8238D800C7C1CE /* Bear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bear.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +73,14 @@
 				C0A4055F2A8226DF00C7C1CE /* AppDelegate.swift */,
 				C0A405612A8226DF00C7C1CE /* SceneDelegate.swift */,
 				C0A405652A8226DF00C7C1CE /* Main.storyboard */,
+				C0A405802A82386600C7C1CE /* BearCollectionViewCell.swift */,
+				C0A405812A82386600C7C1CE /* BearCollectionViewCell.xib */,
+				C0A4057E2A82305B00C7C1CE /* BearViewController.swift */,
 				C0A4057C2A82288A00C7C1CE /* LottoViewController.swift */,
 				C0A405682A8226E000C7C1CE /* Assets.xcassets */,
 				C0A4056A2A8226E000C7C1CE /* LaunchScreen.storyboard */,
 				C0A4056D2A8226E000C7C1CE /* Info.plist */,
+				C0A405842A8238D800C7C1CE /* Bear.swift */,
 			);
 			path = week4_assignment;
 			sourceTree = "<group>";
@@ -141,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A405832A82386600C7C1CE /* BearCollectionViewCell.xib in Resources */,
 				C0A4056C2A8226E000C7C1CE /* LaunchScreen.storyboard in Resources */,
 				C0A405692A8226E000C7C1CE /* Assets.xcassets in Resources */,
 				C0A405672A8226DF00C7C1CE /* Main.storyboard in Resources */,
@@ -154,9 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A4057F2A82305B00C7C1CE /* BearViewController.swift in Sources */,
+				C0A405822A82386600C7C1CE /* BearCollectionViewCell.swift in Sources */,
 				C0A4057D2A82288A00C7C1CE /* LottoViewController.swift in Sources */,
 				C0A405602A8226DF00C7C1CE /* AppDelegate.swift in Sources */,
 				C0A405622A8226DF00C7C1CE /* SceneDelegate.swift in Sources */,
+				C0A405852A8238D800C7C1CE /* Bear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
