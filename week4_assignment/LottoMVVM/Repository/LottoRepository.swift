@@ -10,8 +10,6 @@ import Alamofire
 
 final class LottoRepository {
     
-    //    private let url = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo="
-    
     private let url = "https://www.dhlottery.co.kr/common.do"
     
     func callLottoInfo(
